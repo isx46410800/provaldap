@@ -1,0 +1,11 @@
+dn: dc=miguel,dc=cat
+dc: miguel
+description: Escola del treball de Barcelona
+objectClass: dcObject
+objectClass: organization
+o: miguel.cat
+
+dn: ou=socis,dc=edt,dc=org
+ou: socis
+description: Container per a socis linux
+objectclass: organizationalunit

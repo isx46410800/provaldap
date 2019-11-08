@@ -10,7 +10,8 @@ ou: socis
 description: Container per a socis linux
 objectclass: organizationalunit
 
-dn: cn=Pau Pou,ou=socis,dc=miguel,dc=cat
+dn: idcat=Pau Pou,ou=socis,dc=miguel,dc=cat
+objectclass: posixAccount
 objectclass: inetOrgPerson
 objectclass: indepeOrgPerson
 cn: Pau Pou
@@ -28,7 +29,8 @@ idcat: 10
 lema: terra lliure, un nou pais
 userPassword: {SSHA}NDkipesNQqTFDgGJfyraLz/csZAIlk2/
 
-dn: cn=Pere Pou,ou=socis,dc=miguel,dc=cat
+dn: idcat=Pere Pou,ou=socis,dc=miguel,dc=cat
+objectclass: posixAccount
 objectclass: inetOrgPerson
 objectclass: indepeOrgPerson
 cn: Pere Pou
@@ -45,7 +47,8 @@ idcat: 11
 lema: Catalunya independent
 userPassword: {SSHA}ghmtRL11YtXoUhIP7z6f7nb8RCNadFe+
 
-dn: cn=Anna Pou,ou=socis,dc=miguel,dc=cat
+dn: idcat=Anna Pou,ou=socis,dc=miguel,dc=cat
+objectclass: posixAccount
 objectclass: inetOrgPerson
 objectclass: indepeOrgPerson
 cn: Anna Pou

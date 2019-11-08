@@ -26,7 +26,6 @@ https://github.com/isx46410800/provaldap
 + provaldap:2019
 + provaldap:latest
 
-[isx46410800@i05 provaldap]$ docker build -t provaldap:2019 .
 [isx46410800@i05 provaldap]$ docker run --name ldapserver -h ldapserver -it provaldap:2019 /bin/bash
 
 
