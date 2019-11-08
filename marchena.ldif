@@ -1,0 +1,16 @@
+dn: idcat=Pau Pou,ou=socis,dc=miguel,dc=cat
+changetype: modify
+add: delictes
+delictes: ha pagat amb targetes black
+-
+add: anysComdemna
+anysComdemna: 10
+
+dn: idcat=Pere Pou,ou=socis,dc=miguel,dc=cat
+changetype: modify
+add: delictes
+delictes: corrupcio en el ayuntament
+-
+add: anysComdemna
+anysComdemna: 8
+

@@ -1,0 +1,34 @@
+attributetype ( 1.1.2.1.1 NAME 'idcat'
+  DESC 'Identificador del soci'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.38
+  SINGLE-VALUE )
+
+attributetype ( 1.1.2.1.2 NAME 'sardanes'
+  DESC 'indica si baila o no'
+  EQUALITY  booleanMatch
+  SYNTAX  1.3.6.1.4.1.1466.115.121.1.7 
+  SINGLE-VALUE )
+ 
+attributetype ( 1.1.2.1.3 NAME 'foto'
+  DESC 'Foto del soci'
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.40
+  SINGLE-VALUE ) 
+
+attributetype ( 1.1.2.1.4 NAME 'lema'
+  DESC 'Lema del soci'
+  EQUALITY caseIgnoreMatch
+  SUBSTR caseIgnoreSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+attributetype ( 1.1.2.1.5 NAME 'twitter'
+  DESC 'twitter del soci'
+  EQUALITY caseExactMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
+  SINGLE-VALUE )
+
+objectclass ( 1.1.2.2.1 NAME 'indepeOrgPerson' 
+  DESC 'clase indepeorgperson'
+  SUP inetOrgPerson
+  STRUCTURAL
+  MUST ( idcat $ lema )
+  MAY ( sardanes $ twitter $ foto ) )

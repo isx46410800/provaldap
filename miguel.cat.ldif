@@ -1,0 +1,64 @@
+dn: dc=miguel,dc=cat
+dc: miguel
+description: Escola del treball de Barcelona
+objectClass: dcObject
+objectClass: organization
+o: miguel.cat
+
+dn: ou=socis,dc=miguel,dc=cat
+ou: socis
+description: Container per a socis linux
+objectclass: organizationalunit
+
+dn: cn=Pau Pou,ou=socis,dc=miguel,dc=cat
+objectclass: inetOrgPerson
+objectclass: indepeOrgPerson
+cn: Pau Pou
+cn: Pauet Pou
+sn: Pou
+homephone: 555-222-2220
+mail: pau@edt.org
+description: Watch out for this guy
+ou: Profes
+uid: pau
+uidNumber: 5000
+gidNumber: 100
+homeDirectory: /tmp/home/pau
+idcat: 10
+lema: terra lliure, un nou pais
+userPassword: {SSHA}NDkipesNQqTFDgGJfyraLz/csZAIlk2/
+
+dn: cn=Pere Pou,ou=socis,dc=miguel,dc=cat
+objectclass: inetOrgPerson
+objectclass: indepeOrgPerson
+cn: Pere Pou
+sn: Pou
+homephone: 555-222-2221
+mail: pere@edt.org
+description: Watch out for this guy
+ou: Profes
+uid: pere
+uidNumber: 5001
+gidNumber: 100
+homeDirectory: /tmp/home/pere
+idcat: 11
+lema: Catalunya independent
+userPassword: {SSHA}ghmtRL11YtXoUhIP7z6f7nb8RCNadFe+
+
+dn: cn=Anna Pou,ou=socis,dc=miguel,dc=cat
+objectclass: inetOrgPerson
+objectclass: indepeOrgPerson
+cn: Anna Pou
+cn: Anita Pou
+sn: Pou
+homephone: 555-222-2222
+mail: anna@edt.org
+description: Watch out for this girl
+ou: Alumnes
+uid: anna
+uidNumber: 5002
+gidNumber: 600
+homeDirectory: /tmp/home/anna
+idcat: 12
+lema: Guanyarem la lluita
+userPassword: {SSHA}Bm4B3Bu/fuH6Bby9lgxfFAwLYrK0RbOq
